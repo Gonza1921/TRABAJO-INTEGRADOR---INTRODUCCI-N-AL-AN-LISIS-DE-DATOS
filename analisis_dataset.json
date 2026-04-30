@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "dataset": "Student_performance_10k.csv",
+    "total_filas": 10000,
+    "total_columnas": 12,
+    "memoria_kb": 3703.57,
+    "fecha_analisis": "2026-04-30"
+  },
+  "estructura": {
+    "columnas": [
+      "roll_no",
+      "gender",
+      "race_ethnicity",
+      "parental_level_of_education",
+      "lunch",
+      "test_preparation_course",
+      "math_score",
+      "reading_score",
+      "writing_score",
+      "science_score",
+      "total_score",
+      "grade"
+    ],
+    "tipos_datos": {
+      "roll_no": "str",
+      "gender": "str",
+      "race_ethnicity": "str",
+      "parental_level_of_education": "str",
+      "lunch": "float64",
+      "test_preparation_course": "float64",
+      "math_score": "str",
+      "reading_score": "float64",
+      "writing_score": "float64",
+      "science_score": "float64",
+      "total_score": "float64",
+      "grade": "str"
+    },
+    "no_nulos": {
+      "roll_no": 9999,
+      "gender": 9982,
+      "race_ethnicity": 9977,
+      "parental_level_of_education": 9978,
+      "lunch": 9976,
+      "test_preparation_course": 9977,
+      "math_score": 9976,
+      "reading_score": 9975,
+      "writing_score": 9976,
+      "science_score": 9977,
+      "total_score": 9981,
+      "grade": 9997
+    },
+    "unicos": {
+      "roll_no": 9999,
+      "gender": 5,
+      "race_ethnicity": 11,
+      "parental_level_of_education": 6,
+      "lunch": 2,
+      "test_preparation_course": 2,
+      "math_score": 99,
+      "reading_score": 84,
+      "writing_score": 91,
+      "science_score": 92,
+      "total_score": 257,
+      "grade": 5
+    }
+  },
+  "calidad_datos": {
+    "nulos_por_columna": {
+      "roll_no": 1,
+      "gender": 18,
+      "race_ethnicity": 23,
+      "parental_level_of_education": 22,
+      "lunch": 24,
+      "test_preparation_course": 23,
+      "math_score": 24,
+      "reading_score": 25,
+      "writing_score": 24,
+      "science_score": 23,
+      "total_score": 19,
+      "grade": 3
+    },
+    "total_nulos": 229,
+    "pct_nulos": 0.19,
+    "duplicados_totales": 0,
+    "duplicados_pct": 0.0
+  },
+  "problemas_detectados": [
+    "math_score es STRING (debe ser numérico) - 1 valor con tab",
+    "gender inconsistente - 17 casos con Boy/Girl/\\\\tmale",
+    "race_ethnicity inconsistente - 20 casos sin prefijo",
+    "229 nulos totales (0.19% - EXCELENTE)",
+    "0 duplicados - datos limpios"
+  ],
+  "kpis_principales": {
+    "desempeño_alto_A_B_pct": 65.63,
+    "desempeño_bajo_D_Fail_pct": 7.33,
+    "participacion_test_prep_pct": 38.87,
+    "cobertura_almuerzo_pct": 64.42,
+    "brecha_genero_pts": 24.36
+  }
+}
